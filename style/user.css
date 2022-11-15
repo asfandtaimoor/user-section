@@ -2,23 +2,46 @@
 .user {
   max-width: 1920px;
   width: 100%;
+  min-width: 350px;
+  padding: 120px 0px;
 }
 
-.user-count {
+.user-cont {
   max-width: 1400px;
+  margin: 120px auto;
+  gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .user-cont {
+    max-width: 1400px;
+    margin: 100px auto;
+    gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .m-auto {
   margin: auto;
 }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .text-center {
   text-align: center;
 }
 
-.heading-1 {
+.heading-1, .heading-2, .link-1, .link-2, .desc-1 {
   font-family: 'Poppins';
   font-style: normal;
+}
+
+.heading-1 {
   font-weight: 600;
   font-size: 52px;
   line-height: 62px;
@@ -28,14 +51,77 @@
   margin-block: 24px;
 }
 
+.heading-2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: -0.2px;
+  color: #090914;
+}
+
 .link-1 {
-  font-family: 'Poppins';
-  font-style: normal;
+  text-decoration: none;
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.2px;
   color: #2563eb;
+}
+
+.link-2 {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #64748b;
+  margin-left: 10px;
+}
+
+.desc-1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #090914;
+}
+
+.card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 620px;
+}
+
+.card__img {
+  width: 229px;
+  margin-right: 40px;
+}
+
+@media (max-width: 569px) {
+  .card {
+    padding: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card__img {
+    margin-right: 0px;
+    margin-bottom: 30px;
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=user.css.map */
